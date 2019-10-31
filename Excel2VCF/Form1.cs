@@ -27,7 +27,7 @@ namespace Excel2VCF
             OpenFileDialog op = new OpenFileDialog();
             op.Title = "选择电话本";
             op.Multiselect = false;
-            op.Filter = "Excel文件|*.xlsx|Excel文件|*.xls";
+            op.Filter = "Excel文件|*.xlsx;*.xls";
             if (DialogResult.OK == op.ShowDialog())
             {
                 lblFilePath.Text = op.FileName;
